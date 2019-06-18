@@ -30,8 +30,11 @@ cmake -DOpenCV_INCLUDE_DIRS=/home/"${USER}"/softwares/opencv/build/install/inclu
 Do I need `atlas`? Maybe  
 * Possibly build caffe first  
 
-Might a
+Get an issue where it says "compute_70" is not compatible. Think this has something to do with hardware. Sherlock has Tesla P100s, which might only work with cuda/9.0 and cudnn/7.1, but the current installation of opencv requires cuda/8. Could probably try to build from scratch, but this is annoying.
 
+^ Revised issue (6/18): pretty sure the GPU is P100, which only supports up to SM_60 - accordingly need to find working versions for this.  
+* But cuda 8 and cudnn 5.1 should work and be the versions to use
+* Try to load a virtualenv for this  
 
 Alternatively, for Python library, try the following to install `pyopenpose`:  
 
