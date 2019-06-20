@@ -36,6 +36,9 @@ Get an issue where it says "compute_70" is not compatible. Think this has someth
 * But cuda 8 and cudnn 5.1 should work and be the versions to use
 * Try to load a virtualenv for this  
 
+^ Revised issue (6/20): now claims that the GPU is V100?  
+* Someone says to use CUDA 9.1 and CUDNN 7 - apparently this works?  
+
 Alternatively, for Python library, try the following to install `pyopenpose`:  
 
 1. Load dependencies:  
