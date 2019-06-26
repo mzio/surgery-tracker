@@ -34,14 +34,15 @@ Just a heads-up these links are kinda graphic.
 | [link](https://www.youtube.com/watch?v=OtqdK-IHp5U&t=0m26s)  | 0:22 - 0:35   | Low     | Top-down                           | Knot-tying, worse quality                                                                                                                           |
 | [link](https://www.youtube.com/watch?v=OtqdK-IHp5U&t=3m03s)  | 3:03 - 3:16   | High    | Top-down                           | Instructional video of knot-tying, intricate finger movements, clear                                                                                |
 
-### Preliminary Findings
+## Preliminary Findings
 
 1. Out-of-the-box implementations are only satisfying in limited cases.
 
-- Installation is (much) easier said than done.
+Installation is (much) easier said than done.
+
 - Large room for improvement.
 
-#### OpenPose
+### OpenPose
 
 Default OpenPose seems to rely heavily on the presence of a larger body in frames.
 
@@ -57,9 +58,9 @@ And seems to be robust to a degree to lower quality videos:
 However close-ups do not do so well:  
 ![close up surgery](./example_videos/close_up-fail.gif)
 
-More examples can be found in the `example_videos` directory.
+### More examples can be found [here](https://drive.google.com/open?id=1cBf7si28Vvn1e9SN4bIukgjV_YQZoEdD)
 
-### Takeaways
+## Takeaways
 
 Hand detection seems promising, although current implementations require additional functionality with regard to limited body presence.
 
