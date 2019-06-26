@@ -33,3 +33,28 @@ Just a heads-up these links are kinda graphic.
 | [link](https://www.youtube.com/watch?v=OtqdK-IHp5U&t=0m36s)  | 0:36 - 0:44   | Medium  | Top-down                           | Knot-tying, more intricate movements                                                                                                                |
 | [link](https://www.youtube.com/watch?v=OtqdK-IHp5U&t=0m26s)  | 0:22 - 0:35   | Low     | Top-down                           | Knot-tying, worse quality                                                                                                                           |
 | [link](https://www.youtube.com/watch?v=OtqdK-IHp5U&t=3m03s)  | 3:03 - 3:16   | High    | Top-down                           | Instructional video of knot-tying, intricate finger movements, clear                                                                                |
+
+### Preliminary Findings
+
+1. Out-of-the-box implementations are only satisfying in limited cases.
+
+- Installation is (much) easier said than done.
+- Large room for improvement.
+
+#### OpenPose
+
+Default OpenPose seems to rely heavily on the presence of a larger body in frames.
+
+When entire humans are in the frame, performs great:  
+![multi-body pose detection](./example_videos/dance_body_good.gif)
+
+Can also perform hand key-point detection in less zoomed out settings, as long as body can be detected:  
+![setup hand detection](./example_videos/setup_hands_good.gif)
+
+And seems to be robust to a degree to lower quality videos:  
+![lower quality hand detection](./example_videos/far-range_hands-only_fair-low_quality.gif)
+
+However close-ups do not do so well:  
+![close up surgery](./example_videos/close_up-fail.gif)
+
+More examples can be found in the `example_videos` directory.
