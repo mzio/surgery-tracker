@@ -58,3 +58,14 @@ However close-ups do not do so well:
 ![close up surgery](./example_videos/close_up-fail.gif)
 
 More examples can be found in the `example_videos` directory.
+
+### Takeaways
+
+Hand detection seems promising, although current implementations require additional functionality with regard to limited body presence.
+
+- Current hand detection relies on using body pose as anchor to extrapolate starting coordinates
+- Some repos deal with this specifically by combining an explicit hand-detection model to substitute this body-dependent anchoring with a hand-focued bounding box
+  - Still working on doing something like this on myself (installation pains don't help)
+  - Others seem to have limitations (e.g. only estimate one hand)
+- But makes the problem extra worthwhile to pursue!
+  - If current methods are annoying to install or lacking in ability, there's more room to make improvements.
