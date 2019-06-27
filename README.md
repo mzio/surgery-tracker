@@ -52,17 +52,17 @@ When entire humans are in the frame, performs great:
 
 Can also perform hand key-point detection in less zoomed out settings, as long as body can be detected:
 
-#### hand detection renders only:
+#### Hand detection renders only:
 
 ![setup hand detection](./example_videos/setup_hands_good.gif)
 
-#### body renders added:
+#### Body renders added:
 
-![setup hand detection](./example_videos/setup_body_good.gif)
+![setup hand detection (bodies rendered)](./example_videos/setup_body_good.gif)
 
-And seems to be robust to a degree to lower quality videos:
+And seems to be robust to a degree with lower quality videos:
 
-#### hand detection renders only:
+#### Hand detection renders only:
 
 ![lower quality hand detection](./example_videos/far-range_hands-only_fair-low_quality.gif)
 
